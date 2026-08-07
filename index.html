@@ -8,20 +8,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N58HKW58');</script>
 <!-- End Google Tag Manager -->
-<!-- Onesignal tag-->
-<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
-    await OneSignal.init({
-      appId: "d17b7b45-a3f3-405d-a094-57ddd5fa2839",
-    });
-  });
-</script>
-<!-- End Onesignal --> 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <title>Кузя Кликер 🐈 — Муркоины</title>
+
+<!-- Favicon (встроен прямо в файл, отдельный файл не нужен) -->
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+
+<!-- Open Graph превью для соцсетей и мессенджеров (Telegram, VK, WhatsApp и т.д.) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Кузя Кликер 🐈 — тапай, корми и играй с котёнком!">
+<meta property="og:description" content="Забавная кликер-игра для детей: зарабатывай муркоины, качай улучшения и заботься о котёнке Кузе, чтобы он был счастлив.">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card (для X/Twitter превью) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Кузя Кликер 🐈 — тапай, корми и играй с котёнком!">
+<meta name="twitter:description" content="Забавная кликер-игра для детей: зарабатывай муркоины, качай улучшения и заботься о котёнке Кузе.">
+<meta name="twitter:image" content="og-image.jpg">
+
+<!-- Цвет темы для мобильных браузеров (строка состояния/адресная строка) -->
+<meta name="theme-color" content="#ffb347">
 
 <style>
   /* ============================================================
@@ -624,6 +633,100 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     box-shadow: inset 0 0 0 2px #e0902a;
   }
 
+  /* ---------- Кнопка "Поделиться результатом" ---------- */
+  .share-btn {
+    width: 100%;
+    margin-top: 6px;
+    padding: 16px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ff8c1a, #ff5ca8);
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    box-shadow: 0 6px 0 #d9720b, 0 10px 20px rgba(224, 92, 168, 0.3);
+    cursor: pointer;
+    transition: transform 0.08s ease;
+  }
+
+  .share-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #d9720b, 0 6px 14px rgba(224, 92, 168, 0.3);
+  }
+
+  /* ---------- Модальное окно с превью карточки перед шерингом ---------- */
+  #share-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+    padding: 20px;
+  }
+
+  #share-modal-overlay.show {
+    display: flex;
+  }
+
+  #share-modal {
+    background: #fff;
+    border-radius: 24px;
+    padding: 20px;
+    max-width: 340px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  }
+
+  #share-modal canvas {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    margin-bottom: 14px;
+  }
+
+  #share-modal-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .share-modal-btn {
+    flex: 1;
+    border: none;
+    border-radius: 14px;
+    padding: 12px;
+    font-weight: 800;
+    font-size: 13px;
+    cursor: pointer;
+    transition: transform 0.08s ease;
+  }
+
+  .share-modal-btn:active {
+    transform: scale(0.96);
+  }
+
+  #share-confirm-btn {
+    background: linear-gradient(135deg, #7ed957, #4fbf3c);
+    color: #fff;
+    box-shadow: 0 4px 0 #349421;
+  }
+
+  #share-cancel-btn {
+    background: #f0e6d2;
+    color: #6b5b3f;
+    box-shadow: 0 4px 0 #d9c9a8;
+  }
+
+  #share-status {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #6b5b3f;
+    min-height: 16px;
+  }
+
   /* ============================================================
      НИЖНЕЕ МЕНЮ НАВИГАЦИИ
      ============================================================ */
@@ -934,6 +1037,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="value" id="stat-rainbow">0</div>
         </div>
       </div>
+
+      <!-- Шеринг результата -->
+      <button id="share-btn" class="share-btn">
+        📤 Похвастаться другу
+      </button>
     </div>
 
   </div>
@@ -958,6 +1066,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </button>
   </div>
 
+</div>
+
+<!-- ===================== МОДАЛЬНОЕ ОКНО "ПОДЕЛИТЬСЯ" ===================== -->
+<div id="share-modal-overlay">
+  <div id="share-modal">
+    <canvas id="share-canvas" width="600" height="600"></canvas>
+    <div id="share-modal-buttons">
+      <button id="share-cancel-btn" class="share-modal-btn">Закрыть</button>
+      <button id="share-confirm-btn" class="share-modal-btn">📤 Поделиться</button>
+    </div>
+    <div id="share-status"></div>
+  </div>
 </div>
 
 <script>
@@ -1762,6 +1882,201 @@ function switchScreen(screenId) {
 }
 
 /* ================================================================
+   ШЕРИНГ РЕЗУЛЬТАТА — "Похвастаться другу"
+   Рисуем красивую карточку на canvas и делимся через Web Share API,
+   с запасными вариантами для браузеров, которые его не поддерживают.
+   ================================================================ */
+
+// Рисуем карточку-достижение на canvas: градиентный фон, счастливый Кузя, статистика
+function drawShareCard() {
+  const canvas = document.getElementById('share-canvas');
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return; // на случай очень старого/нестандартного браузера без поддержки Canvas
+  const W = canvas.width;
+  const H = canvas.height;
+
+  // Диагональный градиент в фирменных цветах игры
+  const grad = ctx.createLinearGradient(0, 0, W, H);
+  grad.addColorStop(0, '#ffe29a');
+  grad.addColorStop(0.45, '#ffb347');
+  grad.addColorStop(1, '#7ec9f2');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  // Заголовок игры
+  ctx.textAlign = 'center';
+  ctx.fillStyle = '#ffffff';
+  ctx.font = 'bold 42px Arial, sans-serif';
+  ctx.shadowColor = 'rgba(0,0,0,0.15)';
+  ctx.shadowBlur = 6;
+  ctx.fillText('Кузя Кликер 🐈', W / 2, 70);
+  ctx.shadowBlur = 0;
+
+  // Круглая картинка Кузи (берём уже загруженную счастливую версию прямо со страницы)
+  const catImg = document.getElementById('cat-img-happy');
+  const catSize = 320;
+  const catX = W / 2 - catSize / 2;
+  const catY = 110;
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(W / 2, catY + catSize / 2, catSize / 2, 0, Math.PI * 2);
+  ctx.closePath();
+  ctx.shadowColor = 'rgba(224, 123, 0, 0.4)';
+  ctx.shadowBlur = 25;
+  ctx.fillStyle = '#fff';
+  ctx.fill();
+  ctx.shadowBlur = 0;
+  ctx.clip();
+  if (catImg && catImg.complete && catImg.naturalWidth > 0) {
+    ctx.drawImage(catImg, catX, catY, catSize, catSize);
+  }
+  ctx.restore();
+
+  // Белая карточка со статистикой снизу
+  const cardY = catY + catSize + 30;
+  const cardH = H - cardY - 30;
+  ctx.fillStyle = 'rgba(255,255,255,0.95)';
+  roundRect(ctx, 40, cardY, W - 80, cardH, 28);
+  ctx.fill();
+
+  // Главная цифра — баланс муркоинов
+  ctx.fillStyle = '#d9720b';
+  ctx.font = 'bold 52px Arial, sans-serif';
+  ctx.fillText('🐟 ' + formatNumber(state.balance), W / 2, cardY + 70);
+
+  ctx.fillStyle = '#6b5b3f';
+  ctx.font = 'bold 20px Arial, sans-serif';
+  ctx.fillText('муркоинов заработано', W / 2, cardY + 102);
+
+  // Дополнительная статистика в два столбика
+  ctx.font = 'bold 26px Arial, sans-serif';
+  ctx.fillStyle = '#b5590c';
+  ctx.fillText('👆 ' + formatNumber(state.totalTaps), W / 2 - 110, cardY + 155);
+  ctx.fillText('🏆 ' + state.clawsLevel, W / 2 + 110, cardY + 155);
+
+  ctx.font = '15px Arial, sans-serif';
+  ctx.fillStyle = '#8a7a5c';
+  ctx.fillText('тапов', W / 2 - 110, cardY + 178);
+  ctx.fillText('уровень коготков', W / 2 + 110, cardY + 178);
+}
+
+// Вспомогательная функция — рисуем прямоугольник со скруглёнными углами (полифил для старых браузеров)
+function roundRect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + w, y, x + w, y + h, r);
+  ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r);
+  ctx.arcTo(x, y, x + w, y, r);
+  ctx.closePath();
+}
+
+// Открываем модалку с превью карточки перед тем, как поделиться
+function openShareModal() {
+  drawShareCard();
+  document.getElementById('share-status').textContent = '';
+  document.getElementById('share-modal-overlay').classList.add('show');
+}
+
+function closeShareModal() {
+  document.getElementById('share-modal-overlay').classList.remove('show');
+}
+
+// Основное действие "Поделиться": пробуем Web Share API с картинкой,
+// если не поддерживается — делимся текстом со ссылкой,
+// если и это недоступно — просто копируем текст в буфер обмена
+async function shareResult() {
+  const statusEl = document.getElementById('share-status');
+  const canvas = document.getElementById('share-canvas');
+  const shareText = `🐈 Мой Кузя заработал ${formatNumber(state.balance)} муркоинов! Заходи играть тоже:`;
+  const shareUrl = window.location.href;
+
+  statusEl.textContent = 'Готовим картинку...';
+
+  canvas.toBlob(async (blob) => {
+    if (!blob) {
+      statusEl.textContent = 'Не получилось создать картинку 😿';
+      return;
+    }
+
+    const file = new File([blob], 'kuzya-clicker.png', { type: 'image/png' });
+
+    try {
+      // Вариант 1: полноценный шеринг с картинкой (поддерживается большинством мобильных браузеров)
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({
+          files: [file],
+          title: 'Кузя Кликер',
+          text: shareText,
+          url: shareUrl
+        });
+        statusEl.textContent = '';
+        return;
+      }
+
+      // Вариант 2: шеринг без файла — только текст и ссылка
+      if (navigator.share) {
+        await navigator.share({
+          title: 'Кузя Кликер',
+          text: shareText,
+          url: shareUrl
+        });
+        statusEl.textContent = '';
+        return;
+      }
+
+      // Вариант 3: браузер совсем не поддерживает Web Share API (обычно десктоп) —
+      // копируем текст в буфер и предлагаем скачать картинку вручную
+      await copyShareTextFallback(shareText, shareUrl);
+      downloadCanvasImage(canvas);
+      statusEl.textContent = '✅ Текст скопирован, картинка скачана!';
+    } catch (err) {
+      // Пользователь просто закрыл системное окно шеринга — это не ошибка
+      if (err && err.name === 'AbortError') {
+        statusEl.textContent = '';
+        return;
+      }
+      console.warn('Ошибка шеринга:', err);
+      // На всякий случай тоже предлагаем запасной вариант
+      try {
+        await copyShareTextFallback(shareText, shareUrl);
+        downloadCanvasImage(canvas);
+        statusEl.textContent = '✅ Текст скопирован, картинка скачана!';
+      } catch (e2) {
+        statusEl.textContent = 'Не получилось поделиться 😿';
+      }
+    }
+  }, 'image/png');
+}
+
+// Копируем текст + ссылку в буфер обмена (запасной вариант для десктопа)
+async function copyShareTextFallback(text, url) {
+  const fullText = `${text} ${url}`;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    await navigator.clipboard.writeText(fullText);
+  } else {
+    // Совсем древний браузер без Clipboard API — через скрытый textarea
+    const ta = document.createElement('textarea');
+    ta.value = fullText;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+  }
+}
+
+// Скачиваем картинку карточки как файл (запасной вариант для десктопа)
+function downloadCanvasImage(canvas) {
+  const link = document.createElement('a');
+  link.download = 'kuzya-clicker.png';
+  link.href = canvas.toDataURL('image/png');
+  link.click();
+}
+
+/* ================================================================
    ИНИЦИАЛИЗАЦИЯ ИГРЫ
    ================================================================ */
 const catButton = document.getElementById('cat-button');
@@ -1794,6 +2109,14 @@ function initGame() {
   document.getElementById('btn-wash').addEventListener('click', washKuzya);
   document.getElementById('btn-play').addEventListener('click', playWithKuzya);
   document.getElementById('btn-sleep-action').addEventListener('click', putKuzyaToSleep);
+
+  // Кнопки шеринга результата
+  document.getElementById('share-btn').addEventListener('click', openShareModal);
+  document.getElementById('share-cancel-btn').addEventListener('click', closeShareModal);
+  document.getElementById('share-confirm-btn').addEventListener('click', shareResult);
+  document.getElementById('share-modal-overlay').addEventListener('click', (e) => {
+    if (e.target.id === 'share-modal-overlay') closeShareModal();
+  });
 
   // Навигация по нижнему меню
   document.querySelectorAll('.nav-btn').forEach(btn => {
